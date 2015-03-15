@@ -25,8 +25,10 @@ public class MessageResource {
 	@GET
 	@Path("/{messageId}")
 	@Produces(MediaType.APPLICATION_XML)
-	public Message getMessage(@PathParam("messageId") long id) {	
+	public Message getMessage(@PathParam("messageId") long id) {
+		
 		return messageService.getMessage(id);
+		
 	}
 	
 }
